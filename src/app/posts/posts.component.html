@@ -1,0 +1,8 @@
+<div class="container">
+    <div>
+        <a class="posts" *ngFor="let post of posts" [routerLink]="['/details', post.id]">
+            <span class="title">{{post.title}}</span>
+            <span class="desc">{{post.body}}</span>
+        </a>
+    </div>
+</div>
